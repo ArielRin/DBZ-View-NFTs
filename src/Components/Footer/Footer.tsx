@@ -17,7 +17,7 @@ const Footer: React.FC = () => {
 
 
         <ChakraLink href="https://dragonballzbsc.com/" isExternal>
-          <Image src="/images/dbz.png" alt="DBZ Logo" width="220px" />
+          <Image src="/images/dbz.png" alt="DBZ Logo" width="80px" />
         </ChakraLink>
         <span>&copy; {currentYear} DragonballZBSC DBZ Funko NFT Collection.</span>
 

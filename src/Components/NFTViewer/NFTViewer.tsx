@@ -202,7 +202,7 @@ function MyNfts() {
                 fontSize: '30px'
               }}
             >
-              DBZ Funko Saiyan NFT Collection Viewer
+              Your DragonBallz Funko Collection
             </Text>
             {loading ? (
               <Text
@@ -227,12 +227,12 @@ function MyNfts() {
                   fontWeight: 'bold',
                 }}
               >
-                No DBZFS NFTs.
+                No DBZ Funko's.
               </Text>
             ) : (
               <Wrap spacing="10px" justify="center">
                 {nfts.map(({ tokenId, imageUrl }) => (
-                  <WrapItem key={tokenId} flexBasis={{ base: '100%', sm: '48%', md: '31%', lg: '19%' }}>
+                  <WrapItem key={tokenId} flexBasis={{ base: '100%', sm: '48%', md: '31%', lg: '23%', xl: '19%' }}>
                     <Box
                       bg="rgba(0, 0, 0, 0)"
                       p="4"
@@ -338,12 +338,23 @@ function MyNfts() {
               </Wrap>
             )}
 
-            <VStack spacing="10px" p="10px" alignItems="center">
-              <Link href="https://example.com/minting-page" isExternal>
-                <Text color="white" fontWeight="bold" fontSize="xl" textDecoration="underline">Mint another DBZ Funko</Text>
-              </Link>
-            </VStack>
           </Box>
+          <Box
+            marginBottom="40px"
+            bg="rgba(0,0,0,0.6)"
+            borderRadius="2xl"
+            padding="20px"
+            maxW="90%"
+            mx="auto"
+            my="20px"
+          >
+                      <VStack spacing="10px" p="10px" alignItems="center">
+                        <Link href="https://dragonballzbsc.com/" isExternal>
+                          <Text color="white" fontWeight="bold" fontSize="lg" textDecoration="underline">Mint another DBZ Funko NFT</Text>
+                        </Link>
+                      </VStack>
+          </Box>
+
           <Box
             bg="rgba(0,0,0,0)"
             padding="20px"
@@ -353,10 +364,10 @@ function MyNfts() {
           >
             <Image
               marginBottom="40px"
-              src="/images/logodbzcharacter.png"
+              src="/images/character.png"
               mx="auto"
               alt="DBZ Funko"
-              width="220px"
+              width="400px"
             />
 
           </Box>
